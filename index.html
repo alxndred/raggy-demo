@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
-  <meta name="description" content="A short description of my website.">
+  <title>Cell Defenders</title>
+  <meta name="description" content="A roguelike where you lead immune cells against pathogens and learn how the immune system works.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <a class="logo" href="#">My Website</a>
+    <a class="logo" href="#" id="logo"><span class="logo-cell"></span>Cell Defenders</a>
+    <nav>
+      <span id="hud"></span>
+      <button class="btn small ghost" id="codex-btn" type="button">Codex</button>
+    </nav>
   </header>
 
-  <main>
-    <h1>Welcome to my website</h1>
-    <p>This is placeholder text. Replace it with your own content.</p>
-    <button id="hello-btn">Click me</button>
-    <p id="hello-msg"></p>
-  </main>
+  <main id="game" aria-live="polite"></main>
+
+  <div id="overlay" hidden></div>
+  <div id="fx" aria-hidden="true"></div>
 
   <footer>
-    <p>&copy; 2026 My Website</p>
+    <p>&copy; 2026 Cell Defenders &middot; An educational game, not medical advice.</p>
   </footer>
 
   <script src="script.js"></script>
